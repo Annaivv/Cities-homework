@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ewl7db');
+  src:  url('fonts/icomoon.eot?ewl7db#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ewl7db') format('truetype'),
+    url('fonts/icomoon.woff?ewl7db') format('woff'),
+    url('fonts/icomoon.svg?ewl7db#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-new-york:before {
+  content: "\e900";
+}
+.icon-paris:before {
+  content: "\e901";
+}
+.icon-san-francisco:before {
+  content: "\e902";
+}
+.icon-stockholm:before {
+  content: "\e903";
+}
+.icon-sydney:before {
+  content: "\e904";
+}
+.icon-tokyo:before {
+  content: "\e905";
+}
+.icon-wellington:before {
+  content: "\e906";
+}
+.icon-amsterdam:before {
+  content: "\e907";
+}
+.icon-austin:before {
+  content: "\e908";
+}
+.icon-barcelona:before {
+  content: "\e909";
+}
+.icon-berlin:before {
+  content: "\e90a";
+}
+.icon-cape-town:before {
+  content: "\e90b";
+}
+.icon-dublin:before {
+  content: "\e90c";
+}
+.icon-london:before {
+  content: "\e90d";
+}
