@@ -1,8 +1,3 @@
-h1, h2{
-  font-family: "Trebuchet MS", sans-serif;
-}
-
-
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.woff?ewl7db') format('woff');
@@ -10,185 +5,179 @@ h1, h2{
   font-style: normal;
 }
 
-
-*,
-*::before,
-*::after{
-  -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-      box-sizing: border-box;
+@font-face {
+    font-family: 'butler';
+    src: url('../fonts/butler_black-webfont.woff2') format('woff2'),
+         url('../fonts/butler_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
 .header {
   background: #423E3B;
   text-align: center;
   padding-bottom: 50px;
 }
-  .header-icon{
-    display: block;
-    width:200px;
-    margin: 0 auto;
-  }
-  .header-title{
-    margin: -30px auto 0;
-    font-size: 36px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: normal;
-    letter-spacing: 1px;
-  }
-    .header-title::before,
-    .header-title::after{
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 3px;
-      background: #fff;
-      vertical-align: middle;
-    }
-    .header-title::before{
-      margin-right: 10px;
-    }
-    .header-title::after{
-      margin-left: 10px;
-    }
 
-ul{
-  position: relative;
+.header-icon {
+  display: block;
+  width: 200px;
   margin: 0 auto;
-  padding: 0;
 }
-li{
-  list-style: none;
-  position: relative;
-  height: 25%;
+
+.header-title {
+  margin: -30px auto 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
-.cities{
-  padding: 0;
+
+.header-title::before, .header-title::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+.header-title::before {
+  margin-right: 10px;
+}
+
+.header-title::after {
+  margin-left: 10px;
+}
+
+.list{
   margin: 0;
+  padding: 0;
   list-style: none;
-  vertical-align: top;
+  font-size: 0;
 }
-  .city{
-    display: inline-block;
-    padding: 60px 0;
-    text-align: center;
-    width: 50%;
-    min-height: 327.8px;
-    font-size: 0;
-    }
 
-      .city-img{
-        display: block;
-        margin: 0 auto;
-        width: 150px;
-      }
-      .city-title{
-        margin: 10px 0 0;
-        font-size: 30px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: normal;
-        color: #423E3B;
-      }
-      .city-description{
-        margin: 15px auto 0;
-        max-width: 550px;
-        font-family: Georgia;
-        font-style: italic;
-        font-size: 18px;
-        line-height: 30px;
-        color: #666;
-      }
+.list-item{
+  padding: 40px 0;
+  text-align: center;
+  width: 50%;
+  height: 15em;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  overflow: initial;
+}
 
-      .city:nth-child(odd){
-        position: relative;
-        left: 0;
-      }
+.list-item:nth-child(4n+2) {
+  background: #f2f2f2;
+}
 
-      .city:nth-child(even){
-        position: absolute;
-        right: 0;
-        height: 447.8px;
-      }
+.list-item:nth-child(4n+3) {
+  background: #f2f2f2;
+}
 
-      .city:nth-child(4n+2){
-        background: #f2f2f2;
-      }
+.item-title{
+  font-family: butler, sans-serif;
+  text-transform: uppercase;
+}
 
-      .city:nth-child(4n+3){
-        background: #f2f2f2;
-      }
+.item-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0 3px;
+}
 
-  .footer{
-    padding: 85px 0;
-    background: #423E3B;
-    vertical-align: bottom;
-    text-align: center;
-  }
-    .footer-text{
-      margin: 0;
-      font-family: Georgia;
-      color: #fff;
-      font-style: italic;
-      font-size: 14px;
-      line-height: 30px;
-    }
+.footer {
+  padding: 85px 0;
+  background: #423E3B;
+  vertical-align: bottom;
+  text-align: center;
+}
 
-    .icon{
-      /* use !important to prevent issues with browser extensions that change fonts */
-      font-family: 'icomoon';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      font-size: 160px;
-      line-height: 1;
+.footer-text {
+  margin: 0;
+  font-family: Georgia;
+  color: #fff;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 30px;
+}
 
-      /* Better Font Rendering =========== */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 110px;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    .icon-new-york:before {
-      content: "\e900";
-    }
-    .icon-paris:before {
-      content: "\e901";
-    }
-    .icon-san-francisco:before {
-      content: "\e902";
-    }
-    .icon-stockholm:before {
-      content: "\e903";
-    }
-    .icon-sydney:before {
-      content: "\e904";
-    }
-    .icon-tokyo:before {
-      content: "\e905";
-    }
-    .icon-wellington:before {
-      content: "\e906";
-    }
-    .icon-amsterdam:before {
-      content: "\e907";
-    }
-    .icon-austin:before {
-      content: "\e908";
-    }
-    .icon-barcelona:before {
-      content: "\e909";
-    }
-    .icon-berlin:before {
-      content: "\e90a";
-    }
-    .icon-cape-town:before {
-      content: "\e90b";
-    }
-    .icon-dublin:before {
-      content: "\e90c";
-    }
-    .icon-london:before {
-      content: "\e90d";
-    }
+.icon-new-york:before {
+  content: "\e900";
+}
+
+.icon-paris:before {
+  content: "\e901";
+}
+
+.icon-san-francisco:before {
+  content: "\e902";
+}
+
+.icon-stockholm:before {
+  content: "\e903";
+}
+
+.icon-sydney:before {
+  content: "\e904";
+}
+
+.icon-tokyo:before {
+  content: "\e905";
+}
+
+.icon-wellington:before {
+  content: "\e906";
+}
+
+.icon-amsterdam:before {
+  content: "\e907";
+}
+
+.icon-austin:before {
+  content: "\e908";
+}
+
+.icon-barcelona:before {
+  content: "\e909";
+}
+
+.icon-berlin:before {
+  content: "\e90a";
+}
+
+.icon-cape-town:before {
+  content: "\e90b";
+}
+
+.icon-dublin:before {
+  content: "\e90c";
+}
+
+.icon-london:before {
+  content: "\e90d";
+}
